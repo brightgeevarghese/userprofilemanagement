@@ -1,7 +1,7 @@
 package edu.miu.cse.userprofilemanagement.service;
 
-import edu.miu.cse.userprofilemanagement.dto.UserRequestDTO;
-import edu.miu.cse.userprofilemanagement.dto.UserResponseDTO;
+import edu.miu.cse.userprofilemanagement.dto.request.UserRequestDTO;
+import edu.miu.cse.userprofilemanagement.dto.response.UserResponseDTO;
 
 import java.util.Optional;
 

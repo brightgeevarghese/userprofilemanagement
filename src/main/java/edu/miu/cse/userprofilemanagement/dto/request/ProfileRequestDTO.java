@@ -1,8 +1,4 @@
-package edu.miu.cse.userprofilemanagement.dto;
-
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+package edu.miu.cse.userprofilemanagement.dto.request;
 
 import java.time.LocalDate;
 

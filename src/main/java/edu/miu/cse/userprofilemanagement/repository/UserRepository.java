@@ -1,6 +1,5 @@
 package edu.miu.cse.userprofilemanagement.repository;
 
-import edu.miu.cse.userprofilemanagement.dto.UserResponseDTO;
 import edu.miu.cse.userprofilemanagement.model.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
