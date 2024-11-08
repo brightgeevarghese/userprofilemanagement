@@ -41,6 +41,9 @@ public class UserprofilemanagementApplication {
 
             //Save the User object by using UserRequestDTO
             System.out.println(userService.createUser(userRequestDTO) + " is created.");
+
+            //Find user by name
+            System.out.println(userService.getUserByUsername("u1") + " is found.");
         };
     }
 }

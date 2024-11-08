@@ -41,6 +41,21 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public Optional<UserResponseDTO> getUserByUsername(String username) {
+        Optional<User> foundUser = userRepository.findByUsername(username);
+        if (foundUser.isPresent()) {
+            //Create ProfileResponseDTO
+            ProfileResponseDTO profileResponseDTO =
+                    new ProfileResponseDTO(
+                            foundUser.get().getProfile().getBio(),
+                            foundUser.get().getProfile().getLocation()
+                    );
+            //create UserResponseDTO
+            UserResponseDTO userResponseDTO = new UserResponseDTO(
+                    foundUser.get().getUsername(),
+                    profileResponseDTO
+            );
+            return Optional.of(userResponseDTO);
+        }
         return Optional.empty();
     }
 }
